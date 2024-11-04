@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Força Resultante e Ação/Reação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles6.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h3 class="text-center mb-5">Cálculo de Força (Segunda e Terceira Lei de Newton)</h3>
+        
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Situação 1: Força Resultante</h5>
+                <div class="mb-3">
+                    <label for="massa1" class="form-label">Massa do objeto (kg):</label>
+                    <input type="number" id="massa1" class="form-control" placeholder="Digite a massa">
+                </div>
+                <div class="mb-3">
+                    <label for="aceleracao1" class="form-label">Aceleração 1 (m/s²):</label>
+                    <input type="number" id="aceleracao1" class="form-control" placeholder="Digite a aceleração 1">
+                </div>
+                <div class="mb-3">
+                    <label for="aceleracao2" class="form-label">Aceleração 2 (m/s²):</label>
+                    <input type="number" id="aceleracao2" class="form-control" placeholder="Digite a aceleração 2">
+                </div>
+                <button id="calcularForcaResultanteBtn" class="btn btn-primary w-100 mb-3">Calcular Força Resultante</button>
+                <div id="resultadoForcaResultante"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Situação 2: Força de Ação e Reação</h5>
+                <div class="mb-3">
+                    <label for="massaObjeto1" class="form-label">Massa do objeto 1 (kg):</label>
+                    <input type="number" id="massaObjeto1" class="form-control" placeholder="Digite a massa do objeto 1">
+                </div>
+                <div class="mb-3">
+                    <label for="aceleracaoObjeto1" class="form-label">Aceleração do objeto 1 (m/s²):</label>
+                    <input type="number" id="aceleracaoObjeto1" class="form-control" placeholder="Digite a aceleração do objeto 1">
+                </div>
+                <div class="mb-3">
+                    <label for="massaObjeto2" class="form-label">Massa do objeto 2 (kg):</label>
+                    <input type="number" id="massaObjeto2" class="form-control" placeholder="Digite a massa do objeto 2">
+                </div>
+                <div class="mb-3">
+                    <label for="aceleracaoObjeto2" class="form-label">Aceleração do objeto 2 (m/s²):</label>
+                    <input type="number" id="aceleracaoObjeto2" class="form-control" placeholder="Digite a aceleração do objeto 2">
+                </div>
+                <button id="calcularAcaoReacaoBtn" class="btn btn-primary w-100 mb-3">Calcular Força de Ação/Reação</button>
+                <div id="resultadoAcaoReacao"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script6.js"></script>
+</body>
+</html>
